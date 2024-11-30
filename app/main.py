@@ -4,7 +4,7 @@ from app.routes.resources_srv import router as router
 app = FastAPI()
 
 # Registrar las rutas
-app.include_router(router, prefix="/api/v1", tags=["Server Info"])
+app.include_router(router)
 
 @app.get("/")
 def root():
